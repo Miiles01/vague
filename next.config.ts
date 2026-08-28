@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
   // Drop the `X-Powered-By: Next.js` response header.
   poweredByHeader: false,
 
@@ -14,6 +15,7 @@ const nextConfig: NextConfig = {
   },
 
   images: {
+    unoptimized: true,
     remotePatterns: [{ protocol: "https", hostname: "img.youtube.com" }, { protocol: "https", hostname: "images.unsplash.com" }],
     // Modern formats — smaller than JPEG/PNG; the browser picks what it supports.
     formats: ["image/avif", "image/webp"],

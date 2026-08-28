@@ -17,6 +17,8 @@ export interface PillButtonProps {
   withArrow?: boolean;
   ariaLabel?: string;
   className?: string;
+  target?: string;
+  rel?: string;
 }
 
 const VARIANTS: Record<Variant, string> = {
@@ -38,6 +40,8 @@ export const PillButton = ({
   withArrow = true,
   ariaLabel,
   className,
+  target,
+  rel,
 }: PillButtonProps) => {
   const ref = useRef<HTMLElement>(null);
   const base = `group inline-flex cursor-pointer items-center gap-2 rounded-pill px-7 py-3.5 text-sm font-medium uppercase tracking-wide outline-none focus-visible:ring-2 focus-visible:ring-brand-light focus-visible:ring-offset-2 ${VARIANTS[variant]} ${className ?? ""}`;
@@ -79,6 +83,8 @@ export const PillButton = ({
         aria-label={ariaLabel}
         onClick={anchorScroll(href, onClick)}
         className={base}
+        target={target}
+        rel={rel}
       >
         {inner}
       </Link>
