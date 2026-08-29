@@ -83,7 +83,7 @@ export const SiteHeader = ({ brand, navLeft, cta }: SiteHeaderProps) => {
         aria-label="Vague Bleue home"
         className="flex items-center gap-2 text-base font-medium tracking-[0.2em] uppercase outline-none focus-visible:underline lg:flex-1 lg:justify-center"
       >
-        <img src="/assets/vague-bleue-logo.svg" className="h-7 w-auto shrink-0" alt="Vague Bleue logo" />
+        <img src="/assets/vague-bleue-logo-v2.svg" className="h-7 w-auto shrink-0" alt="Vague Bleue logo" />
         <div className="flex flex-col"><span className="leading-none">{brand}</span><span className="text-[10px] tracking-widest opacity-60 leading-none mt-1">TAEKWONDO</span></div>
       </Link>
 
