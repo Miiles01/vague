@@ -101,7 +101,7 @@ export const SiteHeader = ({ brand, navLeft, cta }: SiteHeaderProps) => {
           aria-label="Open menu"
           aria-expanded={open}
           onClick={() => setOpen(true)}
-          className="grid size-10 cursor-pointer place-items-center rounded-pill bg-on-brand/15 outline-none backdrop-blur hover:bg-on-brand/25 focus-visible:ring-2 focus-visible:ring-on-brand"
+          className="grid size-10 cursor-pointer place-items-center rounded-pill bg-on-brand/15 outline-none hover:bg-on-brand/25 focus-visible:ring-2 focus-visible:ring-on-brand"
         >
           <span className="flex flex-col gap-[5px]">
             <span className="block h-px w-4 bg-on-brand" />
