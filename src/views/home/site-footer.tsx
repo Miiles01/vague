@@ -43,7 +43,7 @@ export const SiteFooter = ({ brand, cta, footer }: SiteFooterProps) => {
         delayIn={150}
         config={{ tension: 200, friction: 24 }}
       >
-        <PillButton variant="solid" onClick={openContact} className="bg-brand-yellow text-ink hover:bg-brand-yellow/80 border-none">
+        <PillButton variant="light" onClick={openContact}>
           {cta}
         </PillButton>
       </Inview>

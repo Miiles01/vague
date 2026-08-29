@@ -34,11 +34,7 @@ export const StatsSection = ({ stats }: StatsSectionProps) => (
   </section>
 );
 
-const ACCENT_COLORS = ["text-brand-yellow", "text-brand-red", "text-brand-green", "text-brand-cyan"];
-
-const StatCell = ({ stat, index }: { stat: StatItem; index: number }) => {
-  const colorClass = ACCENT_COLORS[index % 4];
-  return (
+const StatCell = ({ stat, index }: { stat: StatItem; index: number }) => (
   <Inview
     tag="div"
     mode="once"
@@ -46,15 +42,14 @@ const StatCell = ({ stat, index }: { stat: StatItem; index: number }) => {
     to={{ opacity: 1, y: 0 }}
     delayIn={index * 110}
     config={{ tension: 180, friction: 24 }}
-    className={`border-t border-on-brand/20 pt-5 group`}
+    className="border-t border-on-brand/20 pt-5"
   >
     <dt className="sr-only">{stat.label}</dt>
     <dd>
-      <span className={`block text-6xl font-medium tracking-tight sm:text-7xl ${colorClass}`}>
+      <span className="block text-6xl font-medium tracking-tight sm:text-7xl">
         {stat.value}
       </span>
       <span className="mt-3 block text-sm text-on-brand/65">{stat.label}</span>
     </dd>
   </Inview>
-  );
-};
+);

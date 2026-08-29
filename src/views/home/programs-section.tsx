@@ -39,12 +39,9 @@ export const ProgramsSection = ({ programs }: ProgramsSectionProps) => (
   </section>
 );
 
-const ACCENT_COLORS = ["text-brand-yellow", "text-brand-red", "text-brand-green", "text-brand-cyan"];
-
 const ProgramRow = ({ program, index }: { program: Program; index: number }) => {
-  const colorClass = ACCENT_COLORS[index % 4];
   return (
-    <li className="block border-t border-hairline last:border-b group">
+    <li className="block border-t border-hairline last:border-b">
       <Inview
         tag="div"
         mode="once"
@@ -54,7 +51,7 @@ const ProgramRow = ({ program, index }: { program: Program; index: number }) => 
         config={{ tension: 190, friction: 26 }}
         className="flex items-center gap-6 py-7"
       >
-        <span className={`w-10 text-2xl font-bold ${colorClass}`}>
+        <span className="w-10 text-sm font-medium text-ink-soft">
           {program.index}
         </span>
         <span className="min-w-0 flex-1">

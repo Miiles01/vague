@@ -50,7 +50,7 @@ export const VideoSection = () => {
               sizes="(max-width: 768px) 100vw, 1024px"
             />
             {/* Play Button Overlay */}
-            <div className="relative z-10 flex size-20 items-center justify-center rounded-full bg-brand-red text-on-brand shadow-lg transition-transform duration-300 group-hover:scale-110 sm:size-24">
+            <div className="relative z-10 flex size-20 items-center justify-center rounded-full bg-brand-light/90 text-on-brand shadow-lg transition-transform duration-300 group-hover:scale-110 sm:size-24">
               <svg viewBox="0 0 24 24" fill="currentColor" className="ml-2 size-8 sm:size-10">
                 <path d="M5 3l14 9-14 9V3z" />
               </svg>
