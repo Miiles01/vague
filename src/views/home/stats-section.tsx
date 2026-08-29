@@ -10,7 +10,7 @@ export interface StatsSectionProps {
 }
 
 export const StatsSection = ({ stats }: StatsSectionProps) => (
-  <section
+  <section data-version="2"
     aria-labelledby="stats-title"
     className="mt-3 rounded-card-lg bg-brand-deep px-6 py-20 md:py-32 lg:py-40 text-on-brand sm:px-10 md:px-20 lg:px-32 xl:px-48"
   >
