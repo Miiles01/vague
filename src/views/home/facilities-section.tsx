@@ -59,7 +59,7 @@ export const FacilitiesSection = ({ facilities }: FacilitiesSectionProps) => (
       </div>
 
       {/* Court cards */}
-      <div className="flex items-end gap-5">
+      <div className="hidden md:flex items-end gap-5">
         {facilities.courts.map((court, i) => (
           <CourtTile key={court.name} court={court} index={i} />
         ))}
