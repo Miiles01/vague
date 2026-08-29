@@ -12,7 +12,7 @@ export interface StatsSectionProps {
 export const StatsSection = ({ stats }: StatsSectionProps) => (
   <section
     aria-labelledby="stats-title"
-    className="mt-3 rounded-card-lg bg-brand-green px-6 py-20 md:py-32 lg:py-40 text-on-brand sm:px-10 md:px-20 lg:px-32 xl:px-48"
+    className="mt-3 rounded-card-lg bg-brand-deep px-6 py-20 md:py-32 lg:py-40 text-on-brand sm:px-10 md:px-20 lg:px-32 xl:px-48"
   >
     <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
       <div>
@@ -34,7 +34,11 @@ export const StatsSection = ({ stats }: StatsSectionProps) => (
   </section>
 );
 
-const StatCell = ({ stat, index }: { stat: StatItem; index: number }) => (
+const ACCENT_COLORS = ["text-brand-yellow", "text-brand-red", "text-brand-green", "text-brand-cyan"];
+
+const StatCell = ({ stat, index }: { stat: StatItem; index: number }) => {
+  const colorClass = ACCENT_COLORS[index % 4];
+  return (
   <Inview
     tag="div"
     mode="once"
@@ -42,14 +46,15 @@ const StatCell = ({ stat, index }: { stat: StatItem; index: number }) => (
     to={{ opacity: 1, y: 0 }}
     delayIn={index * 110}
     config={{ tension: 180, friction: 24 }}
-    className="border-t border-on-brand/20 pt-5"
+    className={`border-t border-on-brand/20 pt-5 group`}
   >
     <dt className="sr-only">{stat.label}</dt>
     <dd>
-      <span className="block text-6xl font-medium tracking-tight sm:text-7xl">
+      <span className={`block text-6xl font-medium tracking-tight sm:text-7xl ${colorClass}`}>
         {stat.value}
       </span>
       <span className="mt-3 block text-sm text-on-brand/65">{stat.label}</span>
     </dd>
   </Inview>
-);
+  );
+};

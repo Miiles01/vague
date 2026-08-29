@@ -93,7 +93,7 @@ export const Loader = ({ brand = "Vague Bleue" }: LoaderProps) => {
         config={{ tension: 200, friction: 22 }}
         className="flex items-center gap-3 text-2xl font-medium uppercase tracking-[0.2em]"
       >
-        <img src="/assets/logo-original.png" className="h-16 md:h-20 w-auto shrink-0" alt="Vague Bleue logo" />
+        <img src="/assets/vague-bleue-logo.svg" className="h-16 md:h-20 w-auto shrink-0" alt="Vague Bleue logo" />
         <div className="flex flex-col"><span className="leading-none">{brand}</span><span className="text-[12px] tracking-widest opacity-60 leading-none mt-2">TAEKWONDO</span></div>
       </Spring>
 

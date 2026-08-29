@@ -20,7 +20,7 @@ export const TestimonialsSection = ({
   <section
     id="testimonials"
     aria-labelledby="testimonials-title"
-    className="bg-brand-cyan text-ink px-6 py-20 sm:px-10 md:px-20 lg:px-32 xl:px-48 sm:py-24 md:py-32 lg:py-40"
+    className="bg-background px-6 py-20 sm:px-10 md:px-20 lg:px-32 xl:px-48 sm:py-24 md:py-32 lg:py-40"
   >
     <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
       <div>
