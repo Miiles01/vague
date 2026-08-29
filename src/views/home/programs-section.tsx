@@ -17,7 +17,7 @@ export const ProgramsSection = ({ programs }: ProgramsSectionProps) => (
   <section
     id="programs"
     aria-labelledby="programs-title"
-    className="bg-surface px-6 py-24 md:py-32 lg:py-40 sm:px-10 md:px-20 lg:px-32 xl:px-48"
+    className="bg-brand-cyan text-ink px-6 py-24 md:py-32 lg:py-40 sm:px-10 md:px-20 lg:px-32 xl:px-48"
   >
     <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
       <div>

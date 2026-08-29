@@ -18,7 +18,7 @@ export const FacilitiesSection = ({ facilities }: FacilitiesSectionProps) => (
   <section
     id="facilities"
     aria-labelledby="facilities-title"
-    className="relative -mt-10 rounded-card-lg bg-background px-6 pb-20 pt-16 md:pb-32 md:pt-28 lg:pb-40 lg:pt-36 sm:px-10 md:px-20 lg:px-32 xl:px-48"
+    className="relative -mt-10 rounded-card-lg bg-brand-yellow text-ink px-6 pb-20 pt-16 md:pb-32 md:pt-28 lg:pb-40 lg:pt-36 sm:px-10 md:px-20 lg:px-32 xl:px-48"
   >
     <div className="grid items-end gap-10 md:grid-cols-2">
       {/* Intro column */}

@@ -53,7 +53,7 @@ export const SiteFooter = ({ brand, cta, footer }: SiteFooterProps) => {
     <div className="grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
       <div className="max-w-xs">
         <span className="flex items-center gap-2 text-lg font-medium tracking-[0.2em] uppercase">
-          <img src="/assets/vague-bleue-logo.svg" className="h-20 md:h-28 w-auto shrink-0" alt="Vague Bleue logo" />
+          <img src="/assets/logo-original.png" className="h-20 md:h-28 w-auto shrink-0" alt="Vague Bleue logo" />
           <div className="flex flex-col"><span className="leading-none">{brand}</span><span className="text-[10px] tracking-widest opacity-60 leading-none mt-1">TAEKWONDO</span></div>
         </span>
         <p className="mt-4 text-sm leading-relaxed text-on-brand/65">

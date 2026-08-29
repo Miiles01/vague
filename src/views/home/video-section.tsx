@@ -12,7 +12,7 @@ export const VideoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <section className="bg-background px-6 py-16 sm:px-10 md:px-20 lg:px-32 xl:px-48 sm:py-20 md:py-32 lg:py-40">
+    <section className="bg-brand-red text-on-brand px-6 py-16 sm:px-10 md:px-20 lg:px-32 xl:px-48 sm:py-20 md:py-32 lg:py-40">
       <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between mb-12">
         <div>
           <Eyebrow>Training</Eyebrow>
