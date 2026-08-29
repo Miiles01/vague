@@ -59,7 +59,7 @@ export const FacilitiesSection = ({ facilities }: FacilitiesSectionProps) => (
       </div>
 
       {/* Court cards */}
-      <div className="hidden md:flex items-end gap-5">
+      <div className="flex items-end gap-5">
         {facilities.courts.map((court, i) => (
           <CourtTile key={court.name} court={court} index={i} />
         ))}
@@ -104,7 +104,7 @@ const CourtTile = ({ court, index }: { court: CourtCard; index: number }) => (
         />
       )}
       <figcaption
-        className={`absolute inset-x-3 bottom-3 rounded-xl px-4 py-3 backdrop-blur-md ${
+        className={`hidden md:block absolute inset-x-3 bottom-3 rounded-xl px-4 py-3 backdrop-blur-md ${
           court.tone === "blue"
             ? "bg-accent-teal/55 text-on-brand"
             : "bg-brand-deep/40 text-on-brand"
