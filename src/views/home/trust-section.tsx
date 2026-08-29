@@ -118,7 +118,7 @@ export const TrustSection = ({ trust }: TrustSectionProps) => {
           config={{ tension: 170, friction: 26 }}
           className="pointer-events-auto"
         >
-          <span className="block rotate-[6deg]">
+          <span className="block">
             <Handle
               tag="div"
               from={{ opacity: 0 }}
